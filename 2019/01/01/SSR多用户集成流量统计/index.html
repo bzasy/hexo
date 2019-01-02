@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="SSR,流量统计,多用户,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="介绍一个Shell脚本，集成SSR多用户管理，流量限制，加密更改等基本操作。是一个基于ShadowsocksR官方的mujson的辅助脚本。方便用户操作。">
+<meta name="keywords" content="SSR,流量统计,多用户">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yto.ooo/2018/12/28/hello-world/index.html">
+<meta property="og:title" content="SSR多用户集成流量统计">
+<meta property="og:url" content="http://yto.ooo/2019/01/01/SSR多用户集成流量统计/index.html">
 <meta property="og:site_name" content="Ryub&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="介绍一个Shell脚本，集成SSR多用户管理，流量限制，加密更改等基本操作。是一个基于ShadowsocksR官方的mujson的辅助脚本。方便用户操作。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-28T04:00:53.825Z">
+<meta property="og:updated_time" content="2019-01-01T06:50:00.303Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="SSR多用户集成流量统计">
+<meta name="twitter:description" content="介绍一个Shell脚本，集成SSR多用户管理，流量限制，加密更改等基本操作。是一个基于ShadowsocksR官方的mujson的辅助脚本。方便用户操作。">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yto.ooo/2018/12/28/hello-world/">
+  <link rel="canonical" href="http://yto.ooo/2019/01/01/SSR多用户集成流量统计/">
 
 
 
 
 
-  <title>Hello World | Ryub's Blog</title>
+  <title>SSR多用户集成流量统计 | Ryub's Blog</title>
   
 
 
@@ -232,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yto.ooo/2018/12/28/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yto.ooo/2019/01/01/SSR多用户集成流量统计/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ryub">
@@ -249,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">SSR多用户集成流量统计</h1>
         
 
         <div class="post-meta">
@@ -261,8 +262,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-28T12:00:53+08:00">
-                2018-12-28
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-01T14:54:56+08:00">
+                2019-01-01
               </time>
             
 
@@ -280,8 +281,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/28/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/28/hello-world/" itemprop="commentCount"></span>
+                <a href="/2019/01/01/SSR多用户集成流量统计/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/01/SSR多用户集成流量统计/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -340,15 +341,14 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>一个Shell脚本，集成SSR多用户管理，流量限制，加密更改等基本操作。是一个基于ShadowsocksR官方的mujson的辅助脚本。方便用户操作。<br><a id="more"></a></p>
+<h4 id="系统支持"><a href="#系统支持" class="headerlink" title="系统支持"></a>系统支持</h4><p>Ubuntu 14<br>Ubuntu 16<br>Debian 7<br>Debian 8<br>CentOS 6<br>CentOS 7  </p>
+<h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><p>一键开启、关闭SSR服务<br>添加、删除、修改用户端口和密码<br>自由限制用户端口流量使用<br>自动修改防火墙规则<br>自助修改SSR加密方式、协议、混淆等参数<br>自动统计，方便查询每个用户端口的流量使用情况<br>自动安装Libsodium库以支持Chacha20等加密方式  </p>
+<h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><p>无法删除最后一名用户（官方限制）<br>未设置开机启动  </p>
+<h4 id="一键安装脚本"><a href="#一键安装脚本" class="headerlink" title="一键安装脚本"></a>一键安装脚本</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/install.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
+<h4 id="卸载脚本"><a href="#卸载脚本" class="headerlink" title="卸载脚本"></a>卸载脚本</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/uninstall.sh &amp;&amp; bash uninstall.sh</span><br></pre></td></tr></table></figure>
+<h4 id="运行检测"><a href="#运行检测" class="headerlink" title="运行检测"></a>运行检测</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/self-check.sh &amp;&amp; bash self-check.sh</span><br></pre></td></tr></table></figure>
+<p>Github<a href="https://github.com/FunctionClub/SSR-Bash-Python" target="_blank" rel="noopener">地址</a></p>
 
       
     </div>
@@ -364,6 +364,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/SSR/" rel="tag"># SSR</a>
+          
+            <a href="/tags/流量统计/" rel="tag"># 流量统计</a>
+          
+            <a href="/tags/多用户/" rel="tag"># 多用户</a>
+          
+        </div>
+      
 
       
       
@@ -373,8 +383,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/07/OpenVZ安装BBR+SSR加速一键安装包/" rel="next" title="OpenVZ的UML+BBR+SSR加速一键包">
-                <i class="fa fa-chevron-left"></i> OpenVZ的UML+BBR+SSR加速一键包
+              <a href="/2019/01/01/Paperman/" rel="next" title="纸人《Paperman》修改合成版">
+                <i class="fa fa-chevron-left"></i> 纸人《Paperman》修改合成版
               </a>
             
           </div>
@@ -383,8 +393,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/01/Netease Music/" rel="prev" title="网易云-歌曲推荐">
-                网易云-歌曲推荐 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/01/01/Typecho在Windows下的伪静态IIS手记/" rel="prev" title="Typecho在Windows下的伪静态IIS手记">
+                Typecho在Windows下的伪静态IIS手记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -511,7 +521,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#系统支持"><span class="nav-number">2.</span> <span class="nav-text">系统支持</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#功能"><span class="nav-number">3.</span> <span class="nav-text">功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#缺点"><span class="nav-number">4.</span> <span class="nav-text">缺点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#一键安装脚本"><span class="nav-number">5.</span> <span class="nav-text">一键安装脚本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#卸载脚本"><span class="nav-number">6.</span> <span class="nav-text">卸载脚本</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运行检测"><span class="nav-number">7.</span> <span class="nav-text">运行检测</span></a></li></ol></div>
             
 
           </div>
