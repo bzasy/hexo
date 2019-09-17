@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[test]]></title>
-    <url>%2F2019%2F09%2F08%2Ftest%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://noao.cc/B%3A/MUSIC%20VIDEO/%E6%98%A0%E5%83%8F%E4%BD%9C%E5%93%81%20Nami%20Komido%20KOBASOLO%20products%20using%20Canon%20C200.mp4?token=U2FsdGVkX1plus8Nm0yAzCsPRwNejqz3DRXaexiegangeSTwtqyFchTva2KfwvDhEziboRC8plusCIMEBOeHX9BCeuxiegangmgzOanq5UJNaSG5Wigixiegangxc7HLwOTn2zcxIMrxiegangcT4I2hCPQ41Uah324ZGW6XKAkZ4EdlKlugequalequal","pic":"http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <title><![CDATA[Dplayer演示]]></title>
+    <url>%2F2019%2F09%2F17%2Fdplayer%2F</url>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"https://pan.noao.cc/down/MUSIC%20VIDEO/BIGBANG%20-%20%EC%9A%B0%EB%A6%AC%20%EC%82%AC%EB%9E%91%ED%95%98%EC%A7%80%20%EB%A7%90%EC%95%84%EC%9A%94%28LET%27S%20NOT%20FALL%20IN%20LOVE%29%20M-V.mp4","pic":"http://home.ustc.edu.cn/~mmmwhy/GEM.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <tags>
         <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Typecho在Windows下的伪静态IIS手记]]></title>
+    <url>%2F2019%2F01%2F01%2FTypecho%E5%9C%A8Windows%E4%B8%8B%E7%9A%84%E4%BC%AA%E9%9D%99%E6%80%81IIS%E6%89%8B%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[相信大家使用TE都是在Linux上，那么如何在Windows上伪静态呢，下面是我在网上各处扒的。我的系统环境是 windows2003+IIS6+MYSQL+PHP 伪静态是ISAPI_Rewrite3 0087破解版 下面是软件下载地址包含使用教程 （转自某CSDN博客）下面是我的配置规则123456789101112131415161718RewriteEngine OnRewriteCompatibility2 OnRepeatLimit 32RewriteBase #unsupported directive: [ISAPI_Rewrite]#3600 = 1 hour#unsupported directive: CacheClockRate 3600RewriteRule ^/tag/(.*)$ /index\.php\?tag=$1RewriteRule ^/sitemap.xml$ /sitemap.xml [L]RewriteRule ^/favicon.ico$ /favicon.ico [L]RewriteRule ^/(.*).html$ /index.php/$1.html [L]RewriteRule ^/(.*)/comment$ /index.php/$1/comment [L]RewriteRule ^/category/(.*)$ /index.php/category/$1 [L]RewriteRule ^/page/(.*)$ /index.php/page/$1 [L]RewriteRule ^/search/(.*)$ /index.php/search/$1 [L]RewriteRule ^/feed/(.*)$ /index.php/feed/$1 [L]RewriteRule ^/2(.*)$ /index.php/2$1 [L]RewriteRule ^/action(.*)$ /index.php/action$1 [L] 现在这样分类目录下的文章都是打不开的，先进后台—-永久链接—-自定义文章路径修改为按分类归档即可现在虽然在使用Hexo了，但是TE也是我喜欢的程序之一，留着笔记。]]></content>
+      <tags>
+        <tag>typecho</tag>
+        <tag>伪静态</tag>
       </tags>
   </entry>
   <entry>
@@ -29,15 +38,6 @@
         <tag>歌曲</tag>
         <tag>推荐</tag>
         <tag>网易云</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Typecho在Windows下的伪静态IIS手记]]></title>
-    <url>%2F2019%2F01%2F01%2FTypecho%E5%9C%A8Windows%E4%B8%8B%E7%9A%84%E4%BC%AA%E9%9D%99%E6%80%81IIS%E6%89%8B%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[相信大家使用TE都是在Linux上，那么如何在Windows上伪静态呢，下面是我在网上各处扒的。我的系统环境是 windows2003+IIS6+MYSQL+PHP 伪静态是ISAPI_Rewrite3 0087破解版 下面是软件下载地址包含使用教程 （转自某CSDN博客）下面是我的配置规则123456789101112131415161718RewriteEngine OnRewriteCompatibility2 OnRepeatLimit 32RewriteBase #unsupported directive: [ISAPI_Rewrite]#3600 = 1 hour#unsupported directive: CacheClockRate 3600RewriteRule ^/tag/(.*)$ /index\.php\?tag=$1RewriteRule ^/sitemap.xml$ /sitemap.xml [L]RewriteRule ^/favicon.ico$ /favicon.ico [L]RewriteRule ^/(.*).html$ /index.php/$1.html [L]RewriteRule ^/(.*)/comment$ /index.php/$1/comment [L]RewriteRule ^/category/(.*)$ /index.php/category/$1 [L]RewriteRule ^/page/(.*)$ /index.php/page/$1 [L]RewriteRule ^/search/(.*)$ /index.php/search/$1 [L]RewriteRule ^/feed/(.*)$ /index.php/feed/$1 [L]RewriteRule ^/2(.*)$ /index.php/2$1 [L]RewriteRule ^/action(.*)$ /index.php/action$1 [L] 现在这样分类目录下的文章都是打不开的，先进后台—-永久链接—-自定义文章路径修改为按分类归档即可现在虽然在使用Hexo了，但是TE也是我喜欢的程序之一，留着笔记。]]></content>
-      <tags>
-        <tag>typecho</tag>
-        <tag>伪静态</tag>
       </tags>
   </entry>
   <entry>
